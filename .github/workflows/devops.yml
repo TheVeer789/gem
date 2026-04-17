@@ -12,4 +12,4 @@ jobs:
   - name: build
     run: docker build -t dev-app .
   - name: deploy
-    run: echo "deploying"
+    run: echo "deploying.."
