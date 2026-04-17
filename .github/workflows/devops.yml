@@ -6,10 +6,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-  steps:
-  - name: checkout-code
-    uses: actions/checkout@v3
-  - name: build
-    run: docker build -t dev-app .
-  - name: deploy
-    run: echo "deploying.."
+    steps:
+    - name: checkout-code
+      uses: actions/checkout@v3
+    - name: build
+      run: docker build -t dev-app .
+    - name: deploy
+      run: echo "deploying.."
